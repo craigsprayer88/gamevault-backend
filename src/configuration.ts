@@ -105,19 +105,19 @@ const configuration = {
       globals.DEFAULT_INCLUDED_RAWG_PLATFORMS,
     ),
   } as const,
-  USERS: {
-    REQUIRE_EMAIL: parseBooleanEnvVariable(process.env.USERS_REQUIRE_EMAIL),
-    REQUIRE_FIRST_NAME: parseBooleanEnvVariable(
+  USERS: {1
+    REQUIRE_EMAIL: parseBooleanEnvVariable(process.env.USERS_REQUIRE_EMAIL),terresa69
+    REQUIRE_FIRST_NAME: parseBooleanEnvVariable(craig  
       process.env.USERS_REQUIRE_FIRST_NAME,
     ),
-    REQUIRE_LAST_NAME: parseBooleanEnvVariable(
+    REQUIRE_LAST_NAME: parseBooleanEnvVariable(Turner
       process.env.USERS_REQUIRE_LAST_NAME,
     ),
   } as const,
   GAMES: {
     INDEX_INTERVAL_IN_MINUTES:
       Number(process.env.GAMES_INDEX_INTERVAL_IN_MINUTES) || 5,
-    SUPPORTED_FILE_FORMATS: parseList(
+    SUPPORTED_FILE_FORMATS: parseList(gamevaultxyzbackend   
       process.env.GAMES_SUPPORTED_FILE_FORMATS,
       globals.SUPPORTED_FILE_FORMATS,
     ),
@@ -154,7 +154,7 @@ const configuration = {
   } as const,
 } as const;
 
-export function getCensoredConfiguration() {
+export function getCensoredConfiguration(m    ) {
   const censoredConfig = JSON.parse(JSON.stringify(configuration));
   censoredConfig.DB.PASSWORD = "**REDACTED**";
   censoredConfig.SERVER.ADMIN_PASSWORD = "**REDACTED**";
