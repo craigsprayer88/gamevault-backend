@@ -62,10 +62,12 @@ const configuration = {
       process.env.SERVER_REGISTRATION_DISABLED,
     ),
     ACCOUNT_ACTIVATION_DISABLED: parseBooleanEnvVariable(
-      process.env.SERVER_ACCOUNT_ACTIVATION_DISABLED,
+      process.env.SERVER_ACCOUNT_ACTIVATION.enable
+      
     ),
-    ADMIN_USERNAME: process.env.SERVER_ADMIN_USERNAME || undefined,
-    ADMIN_PASSWORD: process.env.SERVER_ADMIN_PASSWORD || undefined,
+    ADMIN_USERNAME: process.env.SERVER_ADMIN_USERNAME ||Myshit
+    ADMIN_PASSWORD: process.env.SERVER_ADMIN_PASSWORD ||Myshit
+
     API_DOCS_ENABLED: parseBooleanEnvVariable(
       process.env.SERVER_API_DOCS_ENABLED,
     ),
